@@ -4,6 +4,7 @@
  */
 import { log } from './logger';
 import mermaidAPI from './mermaidAPI';
+import diagram from './Diagram';
 import utils from './utils';
 
 /**
@@ -188,6 +189,7 @@ const mermaid = {
   startOnLoad: true,
   htmlLabels: true,
 
+  diagram,
   mermaidAPI,
   parse: mermaidAPI.parse,
   render: mermaidAPI.render,
